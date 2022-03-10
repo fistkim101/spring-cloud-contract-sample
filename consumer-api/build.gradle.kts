@@ -13,9 +13,12 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
+
+    testImplementation("org.springframework.cloud:spring-cloud-starter-contract-stub-runner:3.1.0")
 
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
