@@ -10,7 +10,7 @@ import org.springframework.test.web.reactive.server.WebTestClient
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @AutoConfigureStubRunner(
-    ids = ["com.fistkim:producer-api:+:stubs:8090"],
+    ids = ["com.fistkim:producer-api:+:stubs:8090"], // local maven repository 내 path:artifact(folder):latest version:~stubs:port 의 의미
     stubsMode = StubRunnerProperties.StubsMode.LOCAL
 )
 class ConsumerApiApplicationTests {
